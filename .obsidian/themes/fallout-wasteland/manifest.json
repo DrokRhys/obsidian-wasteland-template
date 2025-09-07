@@ -1,0 +1,11 @@
+{
+    "name": "Fallout Wasteland",
+    "version": "1.0.0",
+    "minAppVersion": "0.16.0",
+    "description": "A Fallout 1 & 2 inspired theme with green terminal aesthetics and retro monospace styling",
+    "author": "DrokRhys",
+    "authorUrl": "https://github.com/DrokRhys/obsidian-wasteland-template",
+    "fundingUrl": "",
+    "publish": false,
+    "screenshot": "screenshot.png"
+}
