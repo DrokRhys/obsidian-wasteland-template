@@ -1,49 +1,80 @@
 /*
 ╔═══════════════════════════════════════════════════╗
-║              FALLOUT WASTELAND THEME              ║
-║          Inspired by Fallout 1 & 2 UI            ║
+║             BROTHERHOOD BLUE THEME               ║
+║           Military-Tech Steel Aesthetic          ║
 ╚═══════════════════════════════════════════════════╝
 */
 
 /* === ROOT VARIABLES === */
 .theme-dark, .theme-light {
-    /* Fallout 1/2 Green Terminal Colors */
-    --background-primary: #000000;
-    --background-primary-alt: #0a0a0a;
-    --background-secondary: #111111;
-    --background-secondary-alt: #1a1a1a;
-    --background-modifier-border: #00ff00;
-    --background-modifier-form-field: #001100;
-    --background-modifier-form-field-highlighted: #002200;
-    --background-modifier-box-shadow: rgba(0, 255, 0, 0.3);
-    --background-modifier-success: #00ff00;
-    --background-modifier-error: #ff0000;
-    --background-modifier-error-hover: #ff3333;
+    /* Fonts */
+    --font-monospace: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    --font-text: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    --font-interface: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+/* === DARK MODE === */
+.theme-dark {
+    --background-primary: #000a0a;
+    --background-primary-alt: #001015;
+    --background-secondary: #001122;
+    --background-secondary-alt: #001530;
+    --background-modifier-border: #0088ff;
+    --background-modifier-form-field: #001122;
+    --background-modifier-form-field-highlighted: #002244;
+    --background-modifier-box-shadow: rgba(0, 136, 255, 0.3);
+    --background-modifier-success: #0088ff;
+    --background-modifier-error: #ff3300;
+    --background-modifier-error-hover: #ff5533;
     
-    /* Text Colors */
-    --text-normal: #00ff00;
-    --text-muted: #00cc00;
-    --text-faint: #008800;
-    --text-error: #ff0000;
-    --text-accent: #ffff00;
-    --text-accent-hover: #ffff99;
+    --text-normal: #0088ff;
+    --text-muted: #0066cc;
+    --text-faint: #004488;
+    --text-error: #ff3300;
+    --text-accent: #00ddff;
+    --text-accent-hover: #99eeff;
     --text-on-accent: #000000;
     
-    /* Interactive Elements */
-    --interactive-normal: #002200;
-    --interactive-hover: #003300;
-    --interactive-accent: #00ff00;
-    --interactive-accent-hover: #33ff33;
-    --interactive-success: #00ff00;
+    --interactive-normal: #002233;
+    --interactive-hover: #003344;
+    --interactive-accent: #0088ff;
+    --interactive-accent-hover: #33aaff;
+    --interactive-success: #0088ff;
     
-    /* Scrollbars */
-    --scrollbar-bg: #001100;
-    --scrollbar-thumb-bg: #00ff00;
+    --scrollbar-bg: #001122;
+    --scrollbar-thumb-bg: #0088ff;
+}
+
+/* === LIGHT MODE === */
+.theme-light {
+    --background-primary: #e8f4ff;
+    --background-primary-alt: #d8ecff;
+    --background-secondary: #eef7ff;
+    --background-secondary-alt: #f4faff;
+    --background-modifier-border: #0066ff;
+    --background-modifier-form-field: #f0f6ff;
+    --background-modifier-form-field-highlighted: #eaf2ff;
+    --background-modifier-box-shadow: rgba(0, 102, 255, 0.2);
+    --background-modifier-success: #0044cc;
+    --background-modifier-error: #cc3300;
+    --background-modifier-error-hover: #dd5533;
     
-    /* Fonts */
-    --font-monospace: 'Courier New', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
-    --font-text: 'Courier New', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
-    --font-interface: 'Courier New', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+    --text-normal: #002244;
+    --text-muted: #0044cc;
+    --text-faint: #888888;
+    --text-error: #cc3300;
+    --text-accent: #0044cc;
+    --text-accent-hover: #0066ff;
+    --text-on-accent: #ffffff;
+    
+    --interactive-normal: #eef7ff;
+    --interactive-hover: #e8f4ff;
+    --interactive-accent: #0066ff;
+    --interactive-accent-hover: #0088ff;
+    --interactive-success: #0044cc;
+    
+    --scrollbar-bg: #eef7ff;
+    --scrollbar-thumb-bg: #0066ff;
 }
 
 /* === GLOBAL STYLING === */
@@ -218,7 +249,7 @@ body {
     background: var(--background-primary);
     border: 2px solid var(--background-modifier-border);
     border-radius: 0;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 20px var(--background-modifier-box-shadow);
 }
 
 .modal-title {
@@ -246,15 +277,6 @@ body {
     text-shadow: 0 0 3px var(--text-accent);
 }
 
-/* === GRAPH VIEW === */
-.graph-view.color-fill {
-    color: var(--text-accent);
-}
-
-.graph-view.color-line {
-    color: var(--background-modifier-border);
-}
-
 /* === STATUS BAR === */
 .status-bar {
     background: var(--background-secondary);
@@ -279,20 +301,7 @@ body {
     font-weight: bold;
 }
 
-/* === SPECIAL FALLOUT ELEMENTS === */
-.fallout-terminal::before {
-    content: "> ";
-    color: var(--text-accent);
-    font-weight: bold;
-}
-
-/* ASCII Art Support */
-pre[class*="language-ascii"] {
-    color: var(--text-accent);
-    text-shadow: 0 0 2px var(--text-accent);
-}
-
-/* Terminal-like Borders */
+/* === WORKSPACE LEAF === */
 .workspace-leaf-content {
     border: 1px solid var(--background-modifier-border);
 }

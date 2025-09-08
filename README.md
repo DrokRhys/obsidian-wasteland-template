@@ -1,33 +1,52 @@
-# Fallout Wasteland Theme for Obsidian
+# Fallout Theme Collection for Obsidian
 
 ```
 ╔═══════════════════════════════════════════════════╗
-║              FALLOUT WASTELAND THEME              ║
-║          Inspired by Fallout 1 & 2 UI            ║
+║           FALLOUT THEME COLLECTION                ║
+║          Inspired by Fallout Universe             ║
 ╚═══════════════════════════════════════════════════╝
 ```
 
-A retro terminal-styled Obsidian theme inspired by the classic Fallout 1 & 2 Pip-Boy interface.
+A collection of 4 retro-styled Obsidian themes inspired by the Fallout universe.
 
-## Features
-- 🟢 Green monochrome terminal color scheme
-- 🖥️ Monospace font styling (Courier New)
-- ⚡ Glowing text effects
-- 🖤 Dark background with green accents
-- 📱 Fully styled UI elements
+## Available Themes
+
+### 🟢 Wasteland Green
+Classic Fallout 1 & 2 terminal theme with monospace font and retro green aesthetics
+- Green monochrome terminal color scheme
+- Courier New font styling
+- Glowing text effects
+
+### 🟡 Vault-Tec Amber
+Retro-futuristic amber Vault-Tec corporate theme
+- Amber/orange color palette
+- Consolas font
+- Corporate tech aesthetic
+
+### 🔵 Brotherhood Blue
+Military-tech blue Brotherhood of Steel theme
+- Blue military color scheme
+- Monaco monospace font
+- High-tech military styling
+
+### ⚪ Pre-War White
+Elegant pre-apocalypse serif theme
+- Light colors with dark text
+- Georgia font
+- Clean, pre-war aesthetic
 
 ## Installation
 
-### Method 1: Manual Installation (Recommended for testing)
+### Method 1: Manual Installation (Recommended)
 1. Download or clone this repository
-2. Copy the `.obsidian/themes/fallout-wasteland/` folder to your vault's `.obsidian/themes/` directory
-3. In Obsidian: Settings → Appearance → Themes → Select "Fallout Wasteland"
+2. Copy any theme folder (e.g., `Wasteland Green/`) to your vault's `.obsidian/themes/` directory
+3. In Obsidian: Settings → Appearance → Themes → Select your chosen theme
 
-### Method 2: Direct Download
+### Method 2: Individual Theme Installation
 1. Open your Obsidian vault folder
 2. Navigate to `.obsidian/themes/` (create if doesn't exist)
-3. Create folder `fallout-wasteland`
-4. Place `theme.css` and `manifest.json` files inside
+3. Copy the desired theme folder with exact name (e.g., `Wasteland Green`)
+4. Folder name must match the theme name in manifest.json exactly
 
 ## Testing
 1. Create a test vault in Obsidian
@@ -47,4 +66,6 @@ To submit to official theme list:
 4. Wait for approval
 
 ## Support
-Report issues at: https://github.com/DrokRhys/obsidian-wasteland-template/issues
+- 🐛 Report issues: https://github.com/DrokRhys/obsidian-wasteland-template/issues
+- ☕ Support development: https://www.patreon.com/magiostudios
+- 🌐 Visit: https://magiostudios.com
